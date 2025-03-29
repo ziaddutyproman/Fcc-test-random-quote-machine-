@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx", // Ensure this matches your React version
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ] // Add DOM libraries for React
+  },
+  "include": [
+    "./src/**/*", // Include all files in the src folder
+    "./**/*" // Fallback to include all files in the project
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

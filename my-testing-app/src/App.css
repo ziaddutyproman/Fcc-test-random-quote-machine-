@@ -1,0 +1,47 @@
+body {
+  background-color: #282c34;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#quote-box {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+#quote-box #text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#quote-box #author {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#quote-box button, #quote-box a {
+  background: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#quote-box button:hover, #quote-box a:hover {
+  background: rgb(47.2592592593, 206.3518518519, 249.7407407407);
+}
+#quote-box #tweet-quote {
+  text-decoration: none;
+  display: inline-block;
+}

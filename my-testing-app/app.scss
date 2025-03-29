@@ -1,0 +1,68 @@
+// Variables
+$primary-color: #282c34;
+$secondary-color: #61dafb;
+$text-color: #ffffff;
+$button-hover: color.adjust($secondary-color, $lightness: -10%);
+
+// Mixin for flex centering
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Global styles
+body {
+    background-color: $primary-color;
+    color: $text-color;
+    font-family: Arial, sans-serif;
+    @include flex-center;
+    height: 100vh;
+    margin: 0;
+}
+
+// Quote box styles
+#quote-box {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    #text {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    #author {
+        font-size: 1rem;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    // Buttons styling
+    button,
+    a {
+        background: $secondary-color;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1rem;
+        color: #000;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background: $button-hover;
+        }
+    }
+
+    // Tweet button
+    #tweet-quote {
+        text-decoration: none;
+        display: inline-block;
+    }
+}
